@@ -1,0 +1,50 @@
+<!doctype HTML>
+<meta charset="utf-8" />
+<title>Be Excellent to Each Other</title>
+<meta content="initial-scale=1,width=device-width" name="viewport" />
+<link rel="author" href="//macn.me" />
+<link rel="project" href="https://github.com/tobymackenzie/bxln2ho3.com.site" />
+<style>
+.attribution{ margin-bottom: 1.5em; }
+blockquote:before { content: "“"; }
+blockquote::after { content: "”"; }
+body{ margin:auto;max-width:92%;padding:1em;text-align:center;width:60em; }
+html{ margin:0;padding:0; }
+:root{ color-scheme:light dark; }
+iframe{ aspect-ratio:560/315;display:block;height:auto;margin:2em auto;max-width:100%;width:100%; }
+</style>
+<h1>Be Excellent to Each Other</h1>
+<p>…and party on, dudes.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rph_1DODXDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<blockquote>Be excellent to each other</blockquote>
+<div class="attribution">- Abraham Lincoln &amp; Ted "Theodore" Logan, <i>Bill &amp; Ted's Excellent Adventure</i></div>
+<blockquote>Do unto others as you would have them do unto you.</blockquote>
+<div class="attribution">- <a href="https://en.wikipedia.org/wiki/Golden_Rule">The Golden Rule</a></div>
+<blockquote>And as ye would that men should do to you, do ye also to them likewise.</blockquote>
+<div class="attribution">- Luke 6:31</div>
+
+<script>
+(function(){
+if(document.addEventListener){
+	var _current = 0;
+	var _keys = [38,38,40,40,37,39,37,39,66,65];
+	document.addEventListener('keyup', function(_event){
+		var _key =  _event.which || _event.keyCode;
+		if(_key === _keys[_current]){
+			if(_current === 9){
+				_current = 0;
+				if(confirm('You win!  Want to celebrate?')){
+					window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+				}
+			}else{
+				++_current;
+			}
+		}else{
+			if(!(_current <= 2 && _key === 38)){
+				_current = 0;
+			}
+		}
+	});
+}
+})();
+</script>
