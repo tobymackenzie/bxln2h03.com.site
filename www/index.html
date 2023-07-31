@@ -52,10 +52,7 @@ if(document.addEventListener){
 		var _key =  _event.which || _event.keyCode;
 		if(_key === _keys[_current]){
 			if(_current === 9){
-				_current = 0;
-				if(confirm('You win!  Want to celebrate?')){
-					window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-				}
+				window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 			}else{
 				++_current;
 			}
